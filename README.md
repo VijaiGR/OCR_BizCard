@@ -1,9 +1,47 @@
-# OCR_BizCard
+# BizCardX: Business Card Data Extraction using OCR
+BizCardX is a Streamlit web application designed to effortlessly extract data from business cards using Optical Character Recognition (OCR) technology. With BizCardX, users can easily upload images of business cards, and the application leverages the powerful easyOCR library to extract pertinent information from the cards. The extracted data is then presented in a user-friendly format and can be stored in a MySQL database for future reference and management.
 
-BizCardX: Extracting Business Card Data with OCR Overview BizCardX is a Streamlit web application which extracts data from business cards using Optical Character Recognition (OCR). Users can upload an image of a business card and the application uses the easyOCR library to extract relevant information from the card. The extracted information is then displayed in a user-friendly format and can be stored in a MySQL database for future reference.
+## Prerequisites
+To successfully run and deploy BizCardX, ensure you have the following prerequisites in place:
 
-The application allows users to view, modify, or delete the extracted data. It also has a user interface for uploading business card images and a table interface for displaying the extracted data. The application is created by Arshad Ayub Ahmed.
+Python environment (Python 3.x recommended)
+Necessary libraries installed: Streamlit, Pandas, easyOCR, PIL, cv2, matplotlib, re, sqlite3
+A functioning MySQL server setup
+Features
+Home
+The home section of BizCardX provides users with an introduction to the application, outlining the technologies utilized and offering a concise overview of its capabilities.
 
-Prerequisites To run this application, you'll need:
+## Upload & Extract
+This pivotal section empowers users to upload images of business cards. Once an image is uploaded, BizCardX undertakes the image processing using the easyOCR library to extract essential details from the card. The extracted information encompasses:
 
-Python environment (Python 3.x recommended) Streamlit, Pandas, easyOCR, PIL, cv2, matplotlib, re, mysql-connector-python libraries installed MySQL server setup and running Features Home: Displays an overview of the app including technologies used and a brief description of the app. Upload & Extract: This section allows the user to upload an image of a business card. The application then processes the image and extracts data such as company name, card holder name, designation, mobile number, email, website, area, city, state, pin code, and the image of the card. Modify: This section allows users to select an entry from the database using a dropdown menu, which they can then update or delete. The changes are committed to the database. How to Run Clone the repository or download the python script. Run the script using the command line: streamlit run app.py The application will open in a new tab of your web browser. You can then navigate through the application, upload images of business cards, and view or modify the extracted data. Note: Ensure your SQLite3 server is running and the database details in the script match your SQL setup.
+Company name
+Card holder's name
+Designation
+Mobile number
+Email address
+Website URL
+Area
+City
+State
+Pin code
+Image of the card
+
+## Modify
+The modify section of BizCardX allows users to interact with the data extracted from business cards. Through a user-friendly dropdown menu, users can select specific entries from the database. This selection enables them to either update or delete the chosen entry. Any modifications performed are promptly saved in the database.
+
+## How to Run
+Follow these steps to initiate and explore BizCardX:
+
+1.Clone this repository or download the Python script.
+2.Open your command line interface.
+3.Navigate to the repository directory.
+4.Execute the following command: streamlit run app.py
+5.The application will promptly open in a new tab of your preferred web browser.
+6.Within the application interface, you can seamlessly navigate, upload business card images, and effortlessly manage extracted data.
+ Note: Before running the application, ensure that your SQLite3 server is operational and the database details within the script correspond 
+ accurately to your SQL setup.
+
+
+
+
+
